@@ -1,7 +1,7 @@
-# Личный проект «Пинк» 
+# Личный проект «Пинк»
 
-* Студент: [Ирина Ситникова](https://up.htmlacademy.ru/adaptive/24/user/1842859).
-* Наставник: `Неизвестно`.
+- Студент: [Ирина Ситникова](https://up.htmlacademy.ru/adaptive/24/user/1842859).
+- Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
