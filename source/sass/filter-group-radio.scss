@@ -1,0 +1,26 @@
+.filter-group-radio {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.filter-group-radio__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter-group-radio__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.filter-group-radio__field {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
