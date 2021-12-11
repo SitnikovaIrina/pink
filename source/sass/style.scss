@@ -1,1 +1,27 @@
-// Начните писать стили здесь
+//global
+@import "./global/fonts.scss";
+@import "./global/body.scss";
+@import "./global/visually-hidden.scss";
+
+//components
+@import "../sass/components/header.scss";
+@import "../sass/components/main-nav.scss";
+@import "../sass/components/page-main.scss";
+@import "../sass/components/download.scss";
+@import "../sass/components/advantages.scss";
+@import "../sass/components/reviews.scss";
+@import "../sass/components/slider.scss";
+@import "../sass/components/rate.scss";
+@import "../sass/components/contacts.scss";
+@import "../sass/components/footer.scss";
+@import "../sass/components/main-catalog.scss";
+@import "../sass/components/upload.scss";
+@import "../sass/components/main-form.scss";
+@import "../sass/components/form-user.scss";
+@import "../sass/components/filter-group-checkbox.scss";
+@import "../sass/components/form-contacts.scss";
+@import "../sass/components/filter-group-radio.scss";
+@import "../sass/components/form-feedback.scss";
+@import "../sass/components/button-green.scss";
+@import "../sass/components/modal-error.scss";
+@import "../sass/components/modal-success.scss";
