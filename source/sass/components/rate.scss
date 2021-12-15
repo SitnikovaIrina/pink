@@ -38,11 +38,11 @@
   background-color: #283645;
   border-left: 2px solid #f2f2f2;
   border-right: 2px solid #f2f2f2;
-}
 
-.rate__title--decor {
-  background-color: transparent;
-  border: none;
+  &--decor {
+    background-color: transparent;
+    border: none;
+  }
 }
 
 .rate__price {
@@ -66,10 +66,88 @@
   text-align: left;
   text-transform: uppercase;
   color: #283645;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
 .rate__toggle {
   margin: 0;
   margin-top: 308px;
+}
+
+@media (min-width: 660px) {
+  .rate {
+    min-height: 404px;
+    background-image: url("../../img/png/grey-background-table.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  .rate__wrapper {
+    box-sizing: border-box;
+    max-width: 660px;
+    padding: 20px;
+    padding-top: 114px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+  }
+
+  .rate__table {
+    position: unset;
+    right: 0;
+    border-collapse: collapse;
+    width: 620px;
+    min-height: 220px;
+  }
+
+  .rate__title {
+    box-sizing: border-box;
+    width: 155px;
+    min-height: 79px;
+    padding: 9px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #283645;
+    border-left: 2px solid #f2f2f2;
+    border-right: 2px solid #f2f2f2;
+
+    &--decor {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  .rate__price {
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .rate__advantages {
+    box-sizing: border-box;
+    width: 276px;
+    min-height: 49px;
+    padding: 9px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: none;
+    color: #283645;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+  }
+
+  .rate__toggle {
+    display: none;
+    margin: 0;
+  }
 }
