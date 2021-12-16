@@ -30,3 +30,49 @@
 .nav__hide {
   display: none;
 }
+
+@media (min-width: 1200px) {
+  .nav {
+    position: absolute;
+    top: 29px;
+    width: 1200px;
+    z-index: 0;
+  }
+
+  .nav__wrapper {
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 621px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    list-style-type: none;
+  }
+
+  .nav__item {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: none;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .nav__hide {
+    display: block;
+  }
+}
