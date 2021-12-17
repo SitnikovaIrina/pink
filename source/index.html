@@ -27,13 +27,11 @@
               </svg>
             </a>
             <button class="page-header__toggle" type="button">
-              <svg class="page-header__toggle-pic" role="img" aria-label="Открыть меню." aria-hidden="true" focusable="false" width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="page-header__open-menu" role="img" aria-label="Открыть меню." aria-hidden="true" focusable="false" width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z" fill="#ffffff"/>
               </svg>
               <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <button class="page-header__toggle-close page-header__hide" type="button">
-              <svg class="page-header__toggle-close-pic" role="img" aria-label="Закрыть меню." aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="page-header__hide" role="img" aria-label="Закрыть меню." aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.85 0 0 20.85 2.15 23 23 2.15 20.85 0Z" fill="#fff"/>
                 <path d="M2.15 0 0 2.15 20.85 23 23 20.85 2.15 0Z" fill="#fff"/>
               </svg>
@@ -41,8 +39,8 @@
             </button>
           </div>
         </div>
-        <nav class="nav nav__hide">
-          <div class="nav__wrapper">
+        <nav class="nav">
+          <div class="nav__wrapper nav__hide">
             <ul class="nav__list">
               <li class="nav__item nav__item--active">
                 <a class="nav__link" href="#">Главная</a>
@@ -66,24 +64,26 @@
       <section class="download">
         <div class="download__wrapper">
           <h2 class="visually-hidden">Скачать приложение</h2>
-          <button class="download__button" type="button">Скачать приложение</button>
+          <a class="download__button-link" href="https://www.apple.com/ru/app-store/">
+            <button class="download__button" type="button">Скачать приложение</button>
+          </a>
           <ul class="download__list">
             <li class="download__item">
-              <a class="download__link" href="#">
+              <a class="download__link" href="https://www.apple.com/ru/app-store/">
                 <img class="download__icon" src="./img/svg/logo/apple-logo.svg" width="47" height="56" alt="Иконка apple.">
-                <span class="visually-hidden">Иконка apple</span>
+                <span class="visually-hidden">App Store</span>
               </a>
             </li>
             <li class="download__item">
-              <a class="download__link" href="#">
+              <a class="download__link" href="https://play.google.com/store">
                 <img class="download__icon" src="./img/svg/logo/android-logo.svg" width="43" height="47" alt="Иконка android.">
-                <span class="visually-hidden">Иконка android</span>
+                <span class="visually-hidden">Google Play</span>
               </a>
             </li>
             <li class="download__item">
-              <a class="download__link" href="#">
+              <a class="download__link" href="https://www.microsoft.com/ru-RU/store/apps">
                 <img class="download__icon" src="./img/svg/logo/microsoft-logo.svg" width="44" height="41" alt="Иконка microsoft.">
-                <span class="visually-hidden">Иконка microsoft</span>
+                <span class="visually-hidden">Microsoft Store</span>
               </a>
             </li>
           </ul>
@@ -94,7 +94,7 @@
     <main class="page-main">
       <div class="page-main__wrapper">
         <section class="advantages">
-          <div class="advantages-wrapper">
+          <div class="advantages__wrapper">
             <h2 class="visually-hidden">Преимущества</h2>
             <p class="advantages__title">Устали от серости мегаполиса?</p>
             <p class="advantages__title advantages__title--text">Нам есть, что вам предложить!</p>
@@ -115,12 +115,12 @@
             </ul>
           </div>
         </section>
-        <section class="research research__invisible">
-          <div class="research__wrapper">
+        <section class="research">
+          <div class="research__wrapper research__invisible">
             <div class="research__container">
               <h2 class="research__title">Эффект на 24 часа!</h2>
               <p class="research__desk">Британские ученые провели исследования и доказали, что положительный эффект<br>от использования приложения длится<br>целые сутки!</p>
-              <a class="research__link"><ins>Узнать больше об исследовании</ins></a>
+              <a class="research__link">Узнать больше об исследовании</a>
             </div>
           </div>
         </section>
@@ -129,16 +129,22 @@
             <h2 class="visually-hidden">Отзывы</h2>
             <ul class="reviews__list slider__list">
               <li class="reviews__item slider__item">
-                <h3 class="reviews__title reviews__title--top">Николай Петров
+                <p class="reviews__title reviews__title--top">Николай Петров
                   <span class="reviews__desk">25 лет, водитель трамвая</span>
-                </h3>
+                </p>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </li>
             </ul>
             <p class="reviews__toggles slider__toggle">
-              <button class="slider__toggle slider__toggle--active" type="button"></button>
-              <button class="slider__toggle" type="button"></button>
-              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle slider__toggle--active" type="button">
+                <span class="visually-hidden">1 отзыв</span>
+              </button>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">2 отзыв</span>
+              </button>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">3 отзыв</span>
+              </button>
             </p>
           </div>
         </section>
@@ -178,9 +184,15 @@
               </tr>
             </table>
             <p class="rate__toggle">
-              <button class="rate__button" type="button"></button>
-              <button class="rate__button rate__button--active" type="button"></button>
-              <button class="rate__button" type="button"></button>
+              <button class="rate__button" type="button">
+                <span class="visually-hidden">1</span>
+              </button>
+              <button class="rate__button rate__button--active" type="button">
+                <span class="visually-hidden">2</span>
+              </button>
+              <button class="rate__button" type="button">
+                <span class="visually-hidden">3</span>
+              </button>
             </p>
           </div>
         </section>
@@ -230,7 +242,7 @@
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link-social" href="#">
-              <svg class="page-footer__icon page-footer__icon--f" role="img" aria-label="Фейсбук." aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="page-footer__icon" role="img" aria-label="Фейсбук." aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.5 3.2H9V0H6.02C2.76.17 1.6 2.27 2.08 5.82H0v3.33h2.08V18h3.94V9.15h2.96V5.82H6c-.02-1-.04-2.3.5-2.63Z" fill="#D22856"/>
               </svg>
               <span class="visually-hidden">Фейсбук</span>
@@ -238,7 +250,7 @@
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link-social" href="#">
-              <svg class="page-footer__icon page-footer__icon--yt" role="img" aria-label="Ютуб." aria-hidden="true" focusable="false" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="page-footer__icon" role="img" aria-label="Ютуб." aria-hidden="true" focusable="false" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.83 12.8a1.25 1.25 0 0 1-1.28.04 1.1 1.1 0 0 1-.44-.46.97.97 0 0 1-.1-.6V1.22c-.03-.2 0-.41.1-.6C.2.42.35.27.55.16a1.26 1.26 0 0 1 1.28.03l12.4 5.5c1.03.45 1.03 1.17 0 1.62l-12.4 5.5Z" fill="#D22856"/>
               </svg>
               <span class="visually-hidden">Ютуб</span>
@@ -247,8 +259,8 @@
         </ul>
         <p class="page-footer__logo-academy">
           <span class="page-footer__desc">Разработано</span>
-          <a class="page-footer__link-academy" href="#">
-            <svg class="page-footer__logo-academy-icon page-footer__logo--html" role="img" aria-label="Логотип HTML Academy." aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="page-footer__logo-academy-icon" role="img" aria-label="Логотип HTML Academy." aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" fill="#D22856"/>
             </svg>
             <span class="visually-hidden">Логотип HTML Academy</span>

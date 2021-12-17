@@ -1,9 +1,15 @@
 .page-main__wrapper {
   flex-grow: 1;
-}
 
-@media (min-width: 660px) {
-  .page-main__wrapper {
-    flex-grow: 1;
+  @media (min-width: 660px) {
+    .page-main__wrapper {
+      flex-grow: 1;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .page-main__wrapper {
+      flex-grow: 1;
+    }
   }
 }
