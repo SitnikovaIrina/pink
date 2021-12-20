@@ -1,21 +1,15 @@
 .rate {
   min-height: 480px;
-  background-image: url("../../img/png/grey-background-table.png");
+  background-image: url("../img/png/grey-background-table.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
 
   @media (min-width: 660px) {
     min-height: 404px;
-    background-image: url("../../img/png/grey-background-table.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
   }
 
   @media (min-width: 1200px) {
     min-height: 534px;
-    background-image: url("../../img/png/grey-background-table.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
   }
 }
 
@@ -30,21 +24,16 @@
   overflow: hidden;
 
   @media (min-width: 660px) {
-    box-sizing: border-box;
     max-width: 660px;
-    padding: 20px;
     padding-top: 114px;
     padding-bottom: 70px;
-    margin: 0 auto;
   }
 
   @media (min-width: 1200px) {
-    box-sizing: border-box;
     max-width: 1200px;
     padding: 130px;
     padding-top: 157px;
     padding-bottom: 100px;
-    margin: 0 auto;
   }
 }
 
@@ -58,17 +47,12 @@
   @media (min-width: 660px) {
     position: unset;
     right: 0;
-    border-collapse: collapse;
     width: 620px;
     min-height: 220px;
   }
 
   @media (min-width: 1200px) {
-    position: unset;
-    right: 0;
-    border-collapse: collapse;
     width: 946px;
-    min-height: 220px;
   }
 }
 
@@ -93,65 +77,30 @@
   }
 
   &--hit {
-    background-image: url("../../img/png/hit-ribbon.png");
+    background-image: url("../img/png/hit-ribbon.png");
     background-size: 74px 74px;
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   @media (min-width: 660px) {
-    box-sizing: border-box;
     width: 155px;
     min-height: 79px;
     padding: 9px 20px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #283645;
-    border-left: 2px solid #f2f2f2;
-    border-right: 2px solid #f2f2f2;
-
-    &--decor {
-      background-color: transparent;
-      border: none;
-    }
 
     &--hit {
-      background-image: url("../../img/png/hit-ribbon.png");
       background-size: 61px 61px;
-      background-repeat: no-repeat;
-      background-position: 0 0;
     }
   }
 
   @media (min-width: 1200px) {
-    box-sizing: border-box;
     width: 233px;
     min-height: 98px;
     padding: 18px 20px;
-    font-weight: 700;
     font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #283645;
-    border-left: 2px solid #f2f2f2;
-    border-right: 2px solid #f2f2f2;
-
-    &--decor {
-      background-color: transparent;
-      border: none;
-    }
 
     &--hit {
-      background-image: url("../../img/png/hit-ribbon.png");
       background-size: 74px 74px;
-      background-repeat: no-repeat;
-      background-position: 0 0;
     }
   }
 }
@@ -165,24 +114,8 @@
   text-transform: uppercase;
   color: #ffffff;
 
-  @media (min-width: 660px) {
-    display: block;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-
   @media (min-width: 1200px) {
-    display: block;
-    font-weight: 300;
     font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
   }
 }
 
@@ -195,63 +128,36 @@
   border: 2px solid #e5e5e5;
 
   &--yes {
-    background-image: url("../../img/svg/yes.svg");
+    background-image: url("../img/svg/yes.svg");
     background-size: 31px 21px;
     background-repeat: no-repeat;
     background-position: 221px 20px;
   }
 
   &--no {
-    background-image: url("../../img/svg/no.svg");
+    background-image: url("../img/svg/no.svg");
     background-size: 27px 27px;
     background-repeat: no-repeat;
     background-position: 221px 20px;
   }
 
   @media (min-width: 660px) {
-    box-sizing: border-box;
     width: 155px;
     min-height: 45px;
     padding: 9px 15px;
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
 
     &--yes {
-      background-image: url("../../img/svg/yes.svg");
-      background-size: 31px 21px;
-      background-repeat: no-repeat;
       background-position: 50% 50%;
     }
 
     &--no {
-      background-image: url("../../img/svg/no.svg");
-      background-size: 27px 27px;
-      background-repeat: no-repeat;
       background-position: 50% 50%;
     }
   }
 
   @media (min-width: 1200px) {
-    box-sizing: border-box;
     width: 234px;
-    min-height: 59px;
     padding: 13px 15px;
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
-
-    &--yes {
-      background-image: url("../../img/svg/yes.svg");
-      background-size: 31px 21px;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
-
-    &--no {
-      background-image: url("../../img/svg/no.svg");
-      background-size: 27px 27px;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
   }
 }
 
@@ -264,30 +170,17 @@
   color: #283645;
 
   @media (min-width: 660px) {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 30px;
-    text-align: left;
     text-transform: none;
-    color: #283645;
   }
 
   @media (min-width: 1200px) {
-    font-weight: 400;
     font-size: 18px;
-    line-height: 30px;
-    text-align: left;
-    text-transform: none;
-    color: #283645;
   }
 }
 
 .rate__advantages-text--invisible {
   @media (min-width: 660px) {
-    display: none;
-  }
-
-  @media (min-width: 1200px) {
     display: none;
   }
 }
@@ -298,11 +191,6 @@
   margin-top: 308px;
 
   @media (min-width: 660px) {
-    display: none;
-    margin: 0;
-  }
-
-  @media (min-width: 1200px) {
     display: none;
     margin: 0;
   }

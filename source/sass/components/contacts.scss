@@ -7,21 +7,16 @@
   margin: 0 auto;
 
   @media (min-width: 660px) {
-    box-sizing: border-box;
     max-width: 660px;
-    padding: 20px;
     padding-top: 55px;
     padding-bottom: 404px;
-    margin: 0 auto;
   }
 
   @media (min-width: 1200px) {
-    box-sizing: border-box;
     max-width: 1200px;
     padding: 130px;
     padding-top: 74px;
     padding-bottom: 528px;
-    margin: 0 auto;
   }
 }
 
@@ -37,35 +32,21 @@
 
   @media (min-width: 660px) {
     width: 370px;
-    margin: 0 auto;
     margin-bottom: 51px;
-    font-weight: 300;
     font-size: 40px;
     line-height: 54px;
-    text-align: center;
-    color: #283645;
   }
 
   @media (min-width: 1200px) {
     width: 462px;
-    margin: 0 auto;
     margin-bottom: 61px;
-    font-weight: 300;
     font-size: 50px;
     line-height: 68px;
-    text-align: center;
-    color: #283645;
   }
 }
 
 .contacts__container {
   @media (min-width: 660px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  @media (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -80,26 +61,6 @@
   line-height: 25px;
   text-align: center;
   color: #283645;
-
-  @media (min-width: 660px) {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: #283645;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: #283645;
-  }
 }
 
 .contacts__phone,
@@ -115,32 +76,6 @@
   text-align: center;
   text-decoration: none;
   color: #d22856;
-
-  @media (min-width: 660px) {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 32px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 33px;
-    text-align: center;
-    text-decoration: none;
-    color: #d22856;
-  }
-
-  @media (min-width: 1200px) {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 32px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 33px;
-    text-align: center;
-    text-decoration: none;
-    color: #d22856;
-  }
 }
 
 .contacts__section {
@@ -162,12 +97,4 @@
 
 .contacts__address {
   margin-bottom: 0;
-
-  @media (min-width: 660px) {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: 1200px) {
-    margin-bottom: 0;
-  }
 }
