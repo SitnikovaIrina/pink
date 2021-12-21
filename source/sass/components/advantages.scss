@@ -1,28 +1,156 @@
+.advantages {
+  position: relative;
+  background-image: url("../img/png/grey-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.advantages__wrapper {
+  box-sizing: border-box;
+  max-width: 320px;
+  padding: 0 20px;
+  padding-top: 46px;
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    max-width: 660px;
+    padding: 20px;
+    padding-top: 58px;
+    padding-bottom: 114px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    padding: 0 130px;
+    padding-top: 77px;
+    padding-bottom: 76px;
+  }
+}
+
 .advantages__title {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 46px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
   color: #283645;
+
+  @media (min-width: 660px) {
+    width: 588px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 54px;
+
+    &--text {
+      width: 580px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    width: 780px;
+    font-size: 50px;
+    line-height: 68px;
+
+    &--text {
+      margin-bottom: 72px;
+    }
+  }
 }
 
 .advantages__list {
-  margin: 0;
+  margin: 0 auto;
+  margin-top: 123px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: 660px) {
+    width: 310px;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+  }
+}
+
+.advantages__item {
+  margin-bottom: 43px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+.advantages__item:nth-child(3n) {
+  margin-bottom: 0;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__item-title {
+  margin: 0;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: 660px) {
+    text-align: left;
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
+    width: 234px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .advantages__desc {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #283645;
+
+  @media (min-width: 660px) {
+    text-align: left;
+  }
+
+  @media (min-width: 1200px) {
+    width: 252px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.advantages__img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+
+  @media (min-width: 660px) {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
 }

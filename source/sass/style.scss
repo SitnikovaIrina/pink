@@ -4,16 +4,17 @@
 @import "./global/visually-hidden.scss";
 
 //components
-@import "../sass/components/header.scss";
-@import "../sass/components/main-nav.scss";
+@import "../sass/components/page-header.scss";
+@import "../sass/components/nav.scss";
 @import "../sass/components/page-main.scss";
 @import "../sass/components/download.scss";
 @import "../sass/components/advantages.scss";
+@import "../sass/components/research.scss";
 @import "../sass/components/reviews.scss";
 @import "../sass/components/slider.scss";
 @import "../sass/components/rate.scss";
 @import "../sass/components/contacts.scss";
-@import "../sass/components/footer.scss";
+@import "../sass/components/page-footer.scss";
 @import "../sass/components/main-catalog.scss";
 @import "../sass/components/upload.scss";
 @import "../sass/components/main-form.scss";
