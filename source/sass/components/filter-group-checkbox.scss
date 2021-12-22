@@ -1,4 +1,4 @@
-.filter-group-checkbox__wrapper {
+.filter-group-checkbox {
   background-color: #f2f2f2;
 
   @media (min-width: 660px) {
@@ -6,7 +6,7 @@
   }
 }
 
-.filter-group-checkbox {
+.filter-group-checkbox__wrapper {
   box-sizing: border-box;
   width: 320px;
   padding: 0 20px;

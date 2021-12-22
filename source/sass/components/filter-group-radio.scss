@@ -1,4 +1,4 @@
-.filter-group-radio__wrapper {
+.filter-group-radio {
   background-color: #f2f2f2;
 
   @media (min-width: 660px) {
@@ -6,7 +6,7 @@
   }
 }
 
-.filter-group-radio {
+.filter-group-radio__wrapper {
   box-sizing: border-box;
   width: 320px;
   padding: 0 20px;
