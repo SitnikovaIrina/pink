@@ -2,7 +2,8 @@
   min-height: 480px;
   background-image: url("../img/png/grey-background-table.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 506px;
+  background-position: 50% 0;
 
   @media (min-width: 660px) {
     min-height: 404px;
