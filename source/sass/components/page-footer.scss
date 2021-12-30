@@ -76,6 +76,22 @@
   height: 42px;
   border-radius: 50%;
   border: 3px solid rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    border: 3px solid rgba(40, 54, 69, 0.1);
+  }
+}
+
+.page-footer__icon {
+  fill: #d22856;
+
+  &:active {
+    fill: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .page-footer__logo-academy {
@@ -102,5 +118,17 @@
 
   @media (min-width: 1200px) {
     font-size: 18px;
+  }
+}
+
+.page-footer__logo-academy-icon {
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.3);
   }
 }
