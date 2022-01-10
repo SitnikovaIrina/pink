@@ -52,8 +52,10 @@
   list-style-type: none;
 
   @media (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 52px;
     width: 819px;
     margin: auto;
     margin-top: 49px;
@@ -62,10 +64,72 @@
 
 .filter-group-checkbox__item {
   margin-bottom: 47px;
+
+  @media (min-width: 1200px) {
+    &--shark {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    &--beach {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &--see {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    &--souvenirs {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    &--tower {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+
+    &--hotel {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+  }
 }
 
-.filter-group-checkbox__field {
-  margin-right: 22px;
+.filter-group-checkbox__label {
+  position: relative;
+  display: block;
+}
+
+.filter-group-checkbox__mark {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
+}
+
+.filter-group-checkbox__field:checked + .filter-group-checkbox__mark {
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.filter-group-checkbox__text {
+  margin-left: 57px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;

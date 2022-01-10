@@ -17,6 +17,7 @@
 }
 
 .contacts__wrapper {
+  position: relative;
   box-sizing: border-box;
   max-width: 320px;
   padding: 20px;
@@ -24,17 +25,38 @@
   padding-bottom: 41px;
   margin: 0 auto;
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 494px;
+    left: 0;
+    border: 160px solid transparent;
+    border-top: 33px solid #ffffff;
+  }
+
   @media (min-width: 660px) {
     max-width: 660px;
     padding-top: 55px;
-    padding-bottom: 404px;
+    padding-bottom: 30px;
+
+    &::before {
+      top: 445px;
+      border: 330px solid transparent;
+      border-top: 68px solid #ffffff;
+    }
   }
 
   @media (min-width: 1200px) {
     max-width: 1200px;
     padding: 130px;
     padding-top: 74px;
-    padding-bottom: 528px;
+    padding-bottom: 26px;
+
+    &::before {
+      top: 398px;
+      border: 600px solid transparent;
+      border-top: 103px solid #ffffff;
+    }
   }
 }
 

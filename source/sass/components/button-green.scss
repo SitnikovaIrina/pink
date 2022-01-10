@@ -10,4 +10,23 @@
   background-color: #2aab6d;
   border: none;
   border-radius: 1px;
+  cursor: pointer;
+
+  :hover {
+    background-color: #1c9b5e;
+  }
+
+  :active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #1c9b5e;
+  }
+
+  :disabled {
+    background-color: #e5e5e5;
+  }
+
+  :disabled:hover {
+    background-color: #e5e5e5;
+    cursor: default;
+  }
 }

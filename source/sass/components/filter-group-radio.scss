@@ -54,6 +54,7 @@
   @media (min-width: 660px) {
     padding-top: 47px;
     padding-left: 58px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: 1200px) {
@@ -65,11 +66,45 @@
   margin-bottom: 38px;
 }
 
-.filter-group-radio__field {
-  margin-right: 31px;
+.filter-group-radio__label {
+  position: relative;
+  display: block;
+}
+
+.filter-group-radio__mark {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
+}
+
+.filter-group-radio__field:checked + .filter-group-radio__mark {
+  background-image: url("../img/svg/ellipse-small.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.filter-group-radio__text {
+  margin-left: 68px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+
+  @media (min-width: 660px) {
+    margin-left: 59px;
+  }
 }
 
