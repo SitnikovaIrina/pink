@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-eidth, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
@@ -44,10 +48,10 @@
           <div class="nav__wrapper">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#">Главная</a>
+                <a class="nav__link" href="index.html">Главная</a>
               </li>
               <li class="nav__item nav__item--active">
-                <a class="nav__link" href="catalog.html">Фотографии</a>
+                <a class="nav__link" href="#">Фотографии</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="form.html">Конкурс</a>
@@ -87,7 +91,11 @@
         <ul class="catalog-list">
           <li class="catalog-item catalog-item--favorite">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__images" src="" width="320" height="137" alt="Мост над ущельем.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpeg/photo/panorama-desktop.jpg 1x, img/jpeg/photo/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/jpeg/photo/panorama-tablet.jpg 1x, img/jpeg/photo/panorama-tablet@2x.jpg 2x">
+                <img class="catalog-item__images" src="img/jpeg/photo/panorama-mobile.jpg" srcset="img/jpeg/photo/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Мост над ущельем.">
+              </picture>
             </a>
             <div class="catalog-item__desc">
               <h2 class="catalog-item__name">Анна</h2>
@@ -103,7 +111,11 @@
 
           <li class="catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__images" src="" width="280" height="180" alt="Белый автомобиль.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpeg/photo/car-desktop.jpg 1x, img/jpeg/photo/car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/jpeg/photo/car-tablet.jpg 1x, img/jpeg/photo/car-tablet@2x.jpg 2x">
+                <img class="catalog-item__images" src="img/jpeg/photo/car-mobile.jpg" srcset="img/jpeg/photo/car-mobile@2x.jpg 2x" width="280" height="180" alt="Белый автомобиль.">
+              </picture>
             </a>
             <div class="catalog-item__desc">
               <h2 class="catalog-item__name">Левон</h2>
@@ -118,7 +130,11 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__images" src="" width="280" height="180" alt="Барабаны.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpeg/photo/drums-desktop.jpg 1x, img/jpeg/photo/drums-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/jpeg/photo/drums-tablet.jpg 1x, img/jpeg/photo/drums-tablet@2x.jpg 2x">
+                <img class="catalog-item__images" src="img/jpeg/photo/drums-mobile.jpg" srcset="img/jpeg/photo/drums-mobile@2x.jpg 2x" width="280" height="180" alt="Барабаны.">
+              </picture>
             </a>
             <div class="catalog-item__desc">
               <h2 class="catalog-item__name">Антон</h2>
@@ -133,7 +149,11 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__images" src="" width="280" height="180" alt="Большое окно.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpeg/photo/window-desktop.jpg 1x, img/jpeg/photo/window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/jpeg/photo/window-tablet.jpg 1x, img/jpeg/photo/window-tablet@2x.jpg 2x">
+                <img class="catalog-item__images" src="img/jpeg/photo/window-mobile.jpg" srcset="img/jpeg/photo/window-mobile@2x.jpg 2x" width="280" height="180" alt="Большое окно.">
+              </picture>
             </a>
             <div class="catalog-item__desc">
               <h2 class="catalog-item__name">Борис</h2>
@@ -148,7 +168,11 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__images" src="" width="280" height="180" alt="Кубанская ярмарка.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpeg/photo/fair-desktop.jpg 1x, img/jpeg/photo/fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/jpeg/photo/fair-tablet.jpg 1x, img/jpeg/photo/fair-tablet@2x.jpg 2x">
+                <img class="catalog-item__images" src="img/jpeg/photo/fair-mobile.jpg" srcset="img/jpeg/photo/fair-mobile@2x.jpg 2x" width="280" height="180" alt="Кубанская ярмарка.">
+              </picture>
             </a>
             <div class="catalog-item__desc">
               <h2 class="catalog-item__name">Сергей</h2>
@@ -163,7 +187,11 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__images" src="" width="280" height="180" alt="Ноги.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpeg/photo/legs-desktop.jpg 1x, img/jpeg/photo/legs-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/jpeg/photo/legs-tablet.jpg 1x, img/jpeg/photo/legs-tablet@2.jpg 2x">
+                <img class="catalog-item__images" src="img/jpeg/photo/legs-mobile.jpg" srcset="img/jpeg/photo/legs-tablet@2x.jpg 2x" width="280" height="180" alt="Ноги.">
+              </picture>
             </a>
             <div class="catalog-item__desc">
               <h2 class="catalog-item__name">Максим</h2>
@@ -178,7 +206,11 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__images" src="" width="280" height="180" alt="Крыло самолета.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpeg/photo/plane-desktop.jpg 1x, img/jpeg/photo/plane-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/jpeg/photo/plane-tablet.jpg 1x, img/jpeg/photo/plane-tablet@2x.jpg 2x">
+                <img class="catalog-item__images" src="img/jpeg/photo/plane-mobile.jpg" srcset="img/jpeg/photo/plane-mobile@2x.jpg 2x" width="280" height="180" alt="Крыло самолета.">
+              </picture>
             </a>
             <div class="catalog-item__desc">
               <h2 class="catalog-item__name">Надежда</h2>
@@ -192,14 +224,17 @@
             </div>
           </li>
         </ul>
-        <p class="main-catalog__upload-text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="main-catalog__upload-text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <section class="upload">
         <div class="upload__wrapper">
           <div class="upload__container">
             <h2 class="visually-hidden">Загрузите своё фото</h2>
             <a class="upload__link" href="#">
-              <img class="upload__image" src="./img/jpeg/winter.jpg" width="280" height="374" alt="Зимний пейзаж.">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/jpeg/photo/winter-tablet.jpg 1x, img/jpeg/photo/winter-tablet@2x.jpg 2x">
+                <img class="upload__image" src="img/jpeg/photo/winter-mobile.jpg" srcset="img/jpeg/photo/winter-mobile@2x.jpg 2x" width="280" height="374" alt="Зимний пейзаж.">
+              </picture>
             </a>
             <form class="upload__formatting" action="https://echo.htmlacademy.ru/" method="get">
               <ul class="upload__list">
@@ -263,7 +298,7 @@
               </ul>
               <div class="upload__container-buttom">
                 <button class="upload__buttom upload__buttom--post" type="submit">Запостить</button>
-                <button class="upload__buttom upload__buttom--cancel" type="button">Отмена</button>
+                <button class="upload__buttom upload__buttom--cancel" type="reset">Отмена</button>
               </div>
           </form>
           </div>

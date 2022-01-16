@@ -19,17 +19,48 @@
   position: relative;
   min-height: 329px;
 
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "Панорама дня";
+    width: 140px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #d22856;
+    z-index: 1;
+  }
+
   @media (min-width: 660px) {
     grid-column: 1 / -1;
     width: 620px;
     min-height: 630px;
     margin-bottom: 30px;
+
+    &::before {
+      top: 57px;
+    }
   }
 
   @media (min-width: 1200px) {
     width: 940px;
     min-height: 602px;
     margin-bottom: 0;
+
+    &::before {
+      top: 54px;
+    }
+  }
+
+  .catalog-item__link {
+    display: block;
+    text-decoration: none;
   }
 
   .catalog-item__images {
@@ -47,23 +78,23 @@
     @media (min-width: 1200px) {
       width: 1200px;
       height: 506px;
-      top: 0;
-      right: 0;
+      top: 1px;
+      right: -130px;
     }
   }
 
   .catalog-item__desc {
     min-height: 142px;
-    padding-top: 137px;
+    padding-top: 162px;
 
     @media (min-width: 660px) {
       min-height: 121px;
-      padding-top: 509px;
+      padding-top: 539px;
     }
 
     @media (min-width: 1200px) {
       min-height: 96px;
-      padding-top: 506px;
+      padding-top: 536px;
     }
   }
 
@@ -105,10 +136,6 @@
       margin-left: 16px;
     }
   }
-}
-
-.catalog-item__link {
-  display: block;
 }
 
 .catalog-item__images {
