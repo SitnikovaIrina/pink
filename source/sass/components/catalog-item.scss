@@ -23,17 +23,12 @@
     position: absolute;
     top: 0;
     right: 0;
-    content: "Панорама дня";
+    content: "";
     width: 140px;
     height: 36px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 36px;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #d22856;
+    background-image: url("../img/svg/panorama-day.svg");
+    background-size: 140px 36px;
+    background-repeat: no-repeat;
     z-index: 1;
   }
 
