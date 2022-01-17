@@ -19,36 +19,39 @@
   position: relative;
   min-height: 329px;
 
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "";
-    width: 140px;
-    height: 36px;
-    background-image: url("../img/svg/panorama-day.svg");
-    background-size: 140px 36px;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-
   @media (min-width: 660px) {
     grid-column: 1 / -1;
     width: 620px;
     min-height: 630px;
     margin-bottom: 30px;
-
-    &::before {
-      top: 57px;
-    }
   }
 
   @media (min-width: 1200px) {
     width: 940px;
     min-height: 602px;
     margin-bottom: 0;
+  }
 
-    &::before {
+  .catalog-item__favorite-sticker {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #d22856;
+    z-index: 1;
+
+    @media (min-width: 660px) {
+      top: 57px;
+    }
+
+    @media (min-width: 1200px) {
       top: 54px;
     }
   }
