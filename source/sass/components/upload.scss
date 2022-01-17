@@ -69,20 +69,17 @@
 .upload__link {
   display: block;
   text-decoration: none;
-  margin-bottom: 42px;
-
-  @media (min-width: 660px) {
-    margin-bottom: 0;
-  }
 }
 
 .upload__image {
   display: block;
+  margin-bottom: 42px;
   min-width: 280px;
   min-height: 374px;
   cursor: pointer;
 
   @media (min-width: 660px) {
+    margin-bottom: 0;
     min-width: 300px;
     min-height: 400px;
   }
