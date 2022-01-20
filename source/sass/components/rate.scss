@@ -17,6 +17,7 @@
   position: relative;
   box-sizing: border-box;
   max-width: 320px;
+  min-height: 480px;
   padding: 20px;
   padding-top: 129px;
   padding-bottom: 47px;
@@ -185,13 +186,16 @@
   }
 }
 
-
-.rate__toggle {
-  margin: 0;
-  margin-top: 308px;
+.rate__pagination {
+  display: flex;
+  margin-top: 350px;
 
   @media (min-width: 660px) {
     display: none;
-    margin: 0;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
   }
 }
+

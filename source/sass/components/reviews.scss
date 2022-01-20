@@ -15,7 +15,8 @@
   max-width: 320px;
   padding: 20px;
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 14px;
+  margin: 0 auto;
   background-color: #ffffff;
 
   @media (min-width: 660px) {
@@ -25,10 +26,16 @@
   }
 
   @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
     max-width: 1200px;
-    padding: 0 130px;
+    padding: 0 110px;
     padding-top: 193px;
     padding-bottom: 41px;
+    background-image: url("../img/svg/quotes.svg");
+    background-size: 79px 63px;
+    background-repeat: no-repeat;
+    background-position: 561px 72px;
   }
 }
 
@@ -103,7 +110,28 @@
   }
 }
 
-.reviews__toggles {
-  margin: 0;
+.reviews__button {
+  display: none;
+  width: 62px;
+  height: 81px;
   padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.reviews__button-arrow {
+  padding: 20px;
+  fill: rgba(40, 54, 69, 0.3);
+
+  &:hover {
+    fill: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.1);
+  }
 }
