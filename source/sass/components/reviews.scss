@@ -14,7 +14,7 @@
   box-sizing: border-box;
   max-width: 320px;
   padding: 20px;
-  padding-top: 50px;
+  padding-top: 42px;
   padding-bottom: 14px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -46,7 +46,7 @@
 }
 
 .reviews__item {
-  margin-bottom: 41px;
+  margin-bottom: 31px;
 
   @media (min-width: 660px) {
     display: flex;
@@ -60,7 +60,7 @@
 
 .reviews__title {
   margin: 0 auto;
-  margin-bottom: 31px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
