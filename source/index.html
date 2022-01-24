@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <div class="page-body__wrapper">
@@ -74,24 +74,24 @@
           <ul class="download__list">
             <li class="download__item">
               <a class="download__link" href="https://www.apple.com/ru/app-store/">
-                <svg class="download__icon" width="47" height="56" viewBox="0 0 47 56">
-                  <use xlink:href="img/svg/sprite.svg#apple-logo"></use>
+                <svg class="download__icon" role="img" aria-label="Иконка apple." aria-hidden="true" focusable="false" width="47" height="56" viewBox="0 0 47 56">
+                  <use xlink:href="img/sprite.svg#apple-logo"></use>
                 </svg>
                 <span class="visually-hidden">App Store</span>
               </a>
             </li>
             <li class="download__item">
               <a class="download__link" href="https://play.google.com/store">
-                <svg class="download__icon" width="43" height="47" viewBox="0 0 43 47">
-                  <use xlink:href="img/svg/sprite.svg#android-logo"></use>
+                <svg class="download__icon" role="img" aria-label="Иконка android." aria-hidden="true" focusable="false" width="43" height="47" viewBox="0 0 43 47">
+                  <use xlink:href="img/sprite.svg#android-logo"></use>
                 </svg>
                 <span class="visually-hidden">Google Play</span>
               </a>
             </li>
             <li class="download__item">
               <a class="download__link" href="https://www.microsoft.com/ru-RU/store/apps">
-                <svg class="download__icon" width="44" height="41" viewBox="0 0 44 41">
-                  <use xlink:href="img/svg/sprite.svg#microsoft-logo"></use>
+                <svg class="download__icon" role="img" aria-label="Иконка microsoft." aria-hidden="true" focusable="false" width="44" height="41" viewBox="0 0 44 41">
+                  <use xlink:href="img/sprite.svg#microsoft-logo"></use>
                 </svg>
                 <span class="visually-hidden">Microsoft Store</span>
               </a>
@@ -102,22 +102,7 @@
       </section>
     </header>
 
-    <script>
-      var navMain = document.querySelector('.nav');
-      var navToggle = document.querySelector('.page-header__toggle');
-
-      navMain.classList.remove('nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('nav--hide')) {
-          navMain.classList.remove('nav--hide');
-          navMain.classList.add('nav--opened');
-        } else {
-          navMain.classList.add('nav--hide');
-          navMain.classList.remove('nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
 
     <main class="page-main">
       <div class="page-main__wrapper">
@@ -256,7 +241,7 @@
               </div>
               <div class="contacts__section contacts__section--email">
                 <h3 class="contacts__title">Пишите:</h3>
-                <a class="contacts__email" href="mail@htmlacademy">mail@htmlacademy</a>
+                <a class="contacts__email" href="mail@htmlacademy">mail@htmlacademy.ru</a>
               </div>
               <div class="contacts__section contacts__section--address">
                 <h3 class="contacts__title">Приезжайте в гости:</h3>

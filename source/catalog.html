@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -68,22 +68,7 @@
       </div>
     </header>
 
-    <script>
-      var navMain = document.querySelector('.nav');
-      var navToggle = document.querySelector('.page-header__toggle');
-
-      navMain.classList.remove('nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('nav--hide')) {
-          navMain.classList.remove('nav--hide');
-          navMain.classList.add('nav--opened');
-        } else {
-          navMain.classList.add('nav--hide');
-          navMain.classList.remove('nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
 
     <main class="main-catalog">
       <div class="main-catalog__wrapper">
@@ -113,9 +98,6 @@
           <li class="catalog-item">
             <a class="catalog-item__link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/jpeg/webp/car-desktop.webp 1x, img/jpeg/webp/car-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/jpeg/webp/car-tablet.webp 1x, img/jpeg/webp/car-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/jpeg/webp/car-mobile.webp 1x, img/jpeg/webp/car-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/jpeg/photo/car-desktop.jpg 1x, img/jpeg/photo/car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/jpeg/photo/car-tablet.jpg 1x, img/jpeg/photo/car-tablet@2x.jpg 2x">
                 <img class="catalog-item__images" src="img/jpeg/photo/car-mobile.jpg" srcset="img/jpeg/photo/car-mobile@2x.jpg 2x" width="280" height="180" alt="Белый автомобиль.">
