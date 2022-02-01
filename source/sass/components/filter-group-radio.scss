@@ -17,21 +17,21 @@
     width: 620px;
     padding: 0;
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 52px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 
   @media (min-width: 1200px) {
     width: 435px;
-    min-height: 281px;
-    margin-bottom: 58px;
+    min-height: 309px;
+    margin-bottom: 52px;
   }
 }
 
 .filter-group-radio__title {
-  margin-bottom: 40px;
-  padding-top: 42px;
+  margin-bottom: 38px;
+  padding-top: 39px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -42,7 +42,7 @@
   @media (min-width: 660px) {
     width: 368px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -54,16 +54,21 @@
   @media (min-width: 660px) {
     padding-top: 47px;
     padding-left: 58px;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: 1200px) {
     padding-left: 72px;
+    padding-bottom: 14px;
   }
 }
 
 .filter-group-radio__item {
-  margin-bottom: 38px;
+  margin-bottom: 45px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 46px;
+  }
 }
 
 .filter-group-radio__label {
@@ -80,14 +85,20 @@
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+  cursor: pointer;
 
   &:hover {
     border: 2px solid #283645;
   }
+}
 
-  &:active {
-    border: 2px solid #d22856;
-  }
+.filter-group-radio__field:focus + .filter-group-radio__mark {
+  outline: 2px solid #283645;
+  outline-offset: -2px;
+}
+
+.filter-group-radio__mark:active {
+  border: 2px solid #d22856;
 }
 
 .filter-group-radio__field:checked + .filter-group-radio__mark {
@@ -105,5 +116,9 @@
 
   @media (min-width: 660px) {
     margin-left: 59px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 63px;
   }
 }

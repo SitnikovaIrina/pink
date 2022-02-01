@@ -1,24 +1,24 @@
 .page-header__background {
   color: #ffffff;
-  background-color: #283645;
-  background-image: url("../img/jpeg/back-mobile.jpg");
-  width: 100%;
-  height: auto;
-  background-size: cover;
+  background-color: #1d2631;
+  background-image: url("../img/jpeg/back-tablet.jpg");
+  background-size: 773px 462px;
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/jpeg/back-mobile@2x.jpg");
-    width: 320px;
+    background-image: url("../img/jpeg/back-tablet@2x.jpg");
+    background-size: 773px auto;
   }
 
   @media (min-width: 660px) {
     background-image: url("../img/jpeg/back-tablet.jpg");
+    background-position: 50% 0;
+    background-size: auto auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/jpeg/back-tablet@2x.jpg");
-      width: 660px;
+      background-size: 1200px auto;
     }
   }
 
@@ -27,175 +27,31 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/jpeg/back-desktop@2x.jpg");
-      width: 1200px;
+      background-size: 2560px auto;
     }
-  }
-}
-
-.page-header__menu {
-  background-color: rgba(0, 0, 0, 0.3);
-
-  &--open {
-    background-color: #283645;
-
-    @media (min-width: 1200px) {
-      display: none;
-    }
-  }
-}
-
-.page-header__wrapper {
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  max-width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
-
-  @media (min-width: 660px) {
-    max-width: 660px;
-  }
-
-  @media (min-width: 1200px) {
-    max-width: 1200px;
-    padding: 0 130px;
-  }
-}
-
-.page-header__logo-link {
-  display: block;
-  box-sizing: border-box;
-  padding: 20px 0;
-  padding-right: 20px;
-  text-decoration: none;
-  cursor: pointer;
-
-  @media (min-width: 660px) {
-    padding-top: 27px;
-    padding-bottom: 43px;
-  }
-}
-
-.page-header__logo {
-  cursor: pointer;
-  fill: #ffffff;
-
-  &--word {
-    display: block;
-  }
-
-  &--glasses {
-    display: none;
-  }
-
-  &--stars {
-    display: none;
-  }
-
-  @media (min-width: 660px) {
-    &--word {
-      display: none;
-    }
-
-    &--glasses {
-      display: block;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    &--glasses {
-      display: none;
-    }
-
-    &--stars {
-      display: block;
-    }
-  }
-}
-
-.page-header__logo-color {
-  fill: #d22856;
-}
-
-.page-header__logo:hover,
-.page-header__logo-color:hover {
-  fill: #d22856;
-}
-
-.page-header__logo:active,
-.page-header__logo-color:active {
-  opacity: 0.3;
-}
-
-.page-header__toggle {
-  display: block;
-  box-sizing: border-box;
-  margin-left: auto;
-  padding: 20px 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-
-  @media (min-width: 660px) {
-    padding: 43px 0;
-  }
-
-  @media (min-width: 1200px) {
-    display: none;
-  }
-}
-
-.page-header__open-menu {
-  display: block;
-  fill: #ffffff;
-
-  &:hover {
-    fill: #d22856;
-  }
-
-  &:active {
-    fill: rgba(210, 40, 86, 0.3);
-  }
-}
-
-.page-header__close-menu {
-  display: none;
-  fill: #ffffff;
-
-  &:hover {
-    fill: #d22856;
-  }
-
-  &:active {
-    fill: rgba(210, 40, 86, 0.3);
   }
 }
 
 .page-header__title {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   max-width: 320px;
-  min-height: 396px;
+  min-height: 667px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 27px;
-  background-image: url("../img/png/bac-phone-mobile.png");
-  background-repeat: no-repeat;
-  background-size: 320px 286px;
-  background-position: 0 110px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/png/bac-phone-mobile@2x.png");
-    background-size: 320px auto;
-  }
+  padding-top: 24px;
 
   @media (min-width: 660px) {
+    display: block;
     position: relative;
     max-width: 660px;
     min-height: 619px;
-    padding-top: 90px;
+    padding-top: 94px;
     background-image: url("../img/png/bac-phone-tablet.png");
+    background-repeat: no-repeat;
     background-size: 660px 545px;
-    background-position: 0 74px;
+    background-position: 0 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/png/bac-phone-tablet@2x.png");
@@ -210,7 +66,7 @@
     padding-top: 100px;
     background-image: url("../img/png/bac-phone-desktop.png");
     background-size: 1050px 645px;
-    background-position: 147px 98px;
+    background-position: 146px 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/png/bac-phone-desktop@2x.png");
@@ -221,22 +77,36 @@
 
 .page-header__title-text {
   margin: 0;
+  padding-bottom: 315px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
   color: #ffffff;
+  background-image: url("../img/png/bac-phone-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 320px 286px;
+  background-position: -20px 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/png/bac-phone-mobile@2x.png");
+    background-size: 320px auto;
+  }
 
   @media (min-width: 660px) {
     width: 245px;
     padding-left: 27px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
     font-size: 40px;
+    background-image: none;
   }
 
   @media (min-width: 1200px) {
     width: 240px;
     padding: 0;
     padding-left: 30px;
+    margin-bottom: 36px;
     font-size: 50px;
     line-height: 68px;
   }
@@ -244,27 +114,28 @@
 
 .page-header__form-title {
   box-sizing: border-box;
-  max-width: 320px;
+  min-width: 320px;
   min-height: 171px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 36px;
+  padding-top: 28px;
 
   @media (min-width: 660px) {
     max-width: 660px;
     min-height: 330px;
-    padding-top: 81px;
+    padding-top: 67px;
   }
 
   @media (min-width: 1200px) {
     max-width: 1200px;
     min-height: 284px;
     padding: 0 130px;
-    padding-top: 74px;
+    padding-top: 59px;
   }
 }
 
 .page-header__form-title-text {
+  width: 228px;
   margin: 0 auto;
   font-weight: 300;
   font-size: 24px;
@@ -273,6 +144,7 @@
   color: #ffffff;
 
   @media (min-width: 660px) {
+    width: 620px;
     font-size: 50px;
     line-height: 68px;
   }
@@ -286,23 +158,23 @@
 
 .page-header__catalog-title {
   box-sizing: border-box;
-  max-width: 320px;
+  min-width: 320px;
   min-height: 171px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 36px;
+  padding-top: 28px;
 
   @media (min-width: 660px) {
-    max-width: 660px;
+    min-width: 660px;
     min-height: 330px;
-    padding-top: 81px;
+    padding-top: 66px;
   }
 
   @media (min-width: 1200px) {
-    max-width: 1200px;
+    min-width: 1200px;
     min-height: 284px;
     padding: 0 130px;
-    padding-top: 74px;
+    padding-top: 59px;
   }
 }
 
