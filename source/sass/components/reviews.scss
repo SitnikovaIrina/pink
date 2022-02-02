@@ -12,7 +12,7 @@
 
 .reviews__wpapper {
   box-sizing: border-box;
-  max-width: 320px;
+  min-width: 320px;
   padding: 20px;
   padding-top: 42px;
   padding-bottom: 14px;
@@ -22,7 +22,7 @@
   @media (min-width: 660px) {
     max-width: 660px;
     padding: 0 20px;
-    padding-top: 41px;
+    padding-top: 35px;
   }
 
   @media (min-width: 1200px) {
@@ -30,8 +30,8 @@
     justify-content: space-between;
     max-width: 1200px;
     padding: 0 110px;
-    padding-top: 193px;
-    padding-bottom: 41px;
+    padding-top: 185px;
+    padding-bottom: 29px;
     background-image: url("../img/svg/quotes.svg");
     background-size: 79px 63px;
     background-repeat: no-repeat;
@@ -43,6 +43,10 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: 1200px) {
+    width: 700px;
+  }
 }
 
 .reviews__item {
@@ -105,21 +109,25 @@
 
   @media (min-width: 660px) {
     width: 620px;
-    margin-bottom: 51px;
+    margin-bottom: 36px;
     font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 700px;
   }
 }
 
 .reviews__button {
   display: none;
-  width: 62px;
-  height: 81px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
 
   @media (min-width: 1200px) {
     display: block;
+    width: 62px;
+    height: 100px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
   }
 }
 
@@ -129,6 +137,11 @@
 
   &:hover {
     fill: rgba(40, 54, 69, 0.6);
+  }
+
+  &:focus {
+    outline: 3px solid #283645;
+    border-radius: 1px;
   }
 
   &:active {

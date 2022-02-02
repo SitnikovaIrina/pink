@@ -1,5 +1,7 @@
 .nav {
+  display: none;
   position: fixed;
+  top: 66px;
   width: 100%;
   z-index: 2;
 
@@ -11,26 +13,40 @@
     display: block;
   }
 
-  @media (min-width: 1200px) {
-    position: absolute;
-    top: 29px;
-    z-index: 0;
-
-    &--hide {
-      display: block;
-    }
+  &--nojs {
+    display: block;
   }
+
+
+  @media (min-width: 660px) {
+    top: 110px;
+  }
+
+  @media (min-width: 1200px) {
+    position: unset;
+    z-index: 0;
+    display: block;
+  }
+}
+
+.nav--nojs .nav__wrapper {
+  display: block;
+  position: static;
+  min-height: 0;
+}
+
+.nav--nojs .nav__item {
+  display: block;
 }
 
 .nav__wrapper {
   @media (min-width: 1200px) {
     box-sizing: border-box;
-    width: 1200px;
-    padding: 0 130px;
+    padding: 30px 130px;
+    padding-right: 0;
     margin: 0 auto;
   }
 }
-
 
 .nav__list {
   padding: 0;
@@ -62,7 +78,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 3px;
         left: 0;
         height: 2px;
         background-color: #ffffff;
@@ -73,7 +89,7 @@
 
 .nav__link {
   display: block;
-  padding: 15px;
+  padding: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
@@ -81,9 +97,15 @@
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     color: #d22856;
+  }
+
+  :focus {
+    outline: 2px solid #ffffff;
+    outline-offset: -2px;
   }
 
   &:active {
@@ -91,7 +113,7 @@
   }
 
   @media (min-width: 1200px) {
-    padding: 20px 0;
+    padding: 16px 0;
     font-weight: 400;
     line-height: 18px;
     text-transform: none;

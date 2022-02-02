@@ -15,23 +15,27 @@
 
   @media (min-width: 660px) {
     width: 620px;
-    padding-top: 54px;
+    padding-top: 47px;
     padding-left: 60px;
+    padding-right: 60px;
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 58px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 
   @media (min-width: 1200px) {
     width: 936px;
-    min-height: 232px;
+    min-height: 239px;
     padding: 0;
+    margin-bottom: 58px;
   }
 }
 
 .filter-group-checkbox__title {
-  padding-bottom: 55px;
+  width: 250px;
+  margin: 0 auto;
+  padding-bottom: 42px;
   padding-top: 42px;
   font-weight: 400;
   font-size: 14px;
@@ -58,14 +62,26 @@
     column-gap: 52px;
     width: 819px;
     margin: auto;
-    margin-top: 49px;
+    margin-top: 47px;
   }
 }
 
 .filter-group-checkbox__item {
-  margin-bottom: 47px;
+  margin-bottom: 52px;
+
+  &:last-child {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: 660px) {
+    &:last-child {
+      margin-bottom: 53px;
+    }
+  }
 
   @media (min-width: 1200px) {
+    margin-bottom: 52px;
+
     &--shark {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
@@ -112,14 +128,20 @@
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+  cursor: pointer;
 
   &:hover {
     border: 2px solid #283645;
   }
+}
 
-  &:active {
-    border: 2px solid #d22856;
-  }
+.filter-group-checkbox__field:focus + .filter-group-checkbox__mark {
+  outline: 2px solid #283645;
+  outline-offset: -2px;
+}
+
+.filter-group-checkbox__mark:active {
+  border: 2px solid #d22856;
 }
 
 .filter-group-checkbox__field:checked + .filter-group-checkbox__mark {
@@ -134,4 +156,8 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+
+  @media (min-width: 1200px) {
+    margin-left: 60px;
+  }
 }

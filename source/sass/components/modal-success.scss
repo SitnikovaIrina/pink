@@ -34,8 +34,8 @@
 
 .modal-success__title {
   margin: auto;
-  margin-top: 44px;
-  margin-bottom: 37px;
+  margin-top: 39px;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -43,7 +43,7 @@
 
   @media (min-width: 660px) {
     width: 205px;
-    margin-top: 49px;
+    margin-bottom: 22px;
     font-size: 30px;
     line-height: 40px;
   }
@@ -56,7 +56,7 @@
 .modal-success__text {
   width: 266px;
   margin: 0 auto;
-  margin-bottom: 41px;
+  margin-bottom: 34px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -65,7 +65,7 @@
 
   @media (min-width: 660px) {
     width: 306px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-size: 18px;
 
     br {
@@ -75,7 +75,7 @@
 
   @media (min-width: 1200px) {
     width: 378px;
-    margin-bottom: 44px;
+    margin-bottom: 41px;
     font-size: 18px;
   }
 }
@@ -83,8 +83,7 @@
 .modal-success__button-container {
   box-sizing: border-box;
   width: 320px;
-  min-height: 163px;
-  padding: 52px 0;
+  padding: 50px 0;
   background-color: #f2f2f2;
 
   @media (min-width: 660px) {
@@ -98,5 +97,14 @@
 
 .modal-success__button {
   display: block;
+  width: 280px;
   margin: 0 auto;
+
+  @media (min-width: 660px) {
+    width: 300px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 460px;
+  }
 }

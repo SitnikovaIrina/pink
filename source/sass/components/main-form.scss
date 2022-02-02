@@ -3,7 +3,7 @@
   width: 320px;
   padding: 0 20px;
   margin: 0 auto;
-  margin-top: 54px;
+  margin-top: 44px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -28,8 +28,8 @@
     width: 490px;
     padding: 0;
     margin: 0 auto;
-    margin-top: 54px;
-    margin-bottom: 82px;
+    margin-top: 91px;
+    margin-bottom: 76px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -39,5 +39,7 @@
 
   @media (min-width: 1200px) {
     width: 756px;
+    margin-top: 91px;
+    margin-bottom: 71px;
   }
 }
