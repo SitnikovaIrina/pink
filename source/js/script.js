@@ -1,59 +1,48 @@
+//меню
+
 var navMain = document.querySelector('.nav');
       var navToggle = document.querySelector('.inner-header__toggle');
 
       navMain.classList.remove('nav--nojs');
 
       navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('nav--hide')) {
-          navMain.classList.remove('nav--hide');
-          navMain.classList.add('nav--opened');
-        } else {
-          navMain.classList.add('nav--hide');
+        if (navMain.classList.contains('nav--opened')) {
           navMain.classList.remove('nav--opened');
+          navMain.classList.add('nav--hide');
+        } else {
+          navMain.classList.add('nav--opened');
+          navMain.classList.remove('nav--hide');
         }
       });
 
-var toggleMain = document.querySelector('.inner-header__button-open');
+//кнопка
+
+var toggleMain = document.querySelector('.inner-header__toggle');
       var navToggle = document.querySelector('.inner-header__toggle');
 
-      toggleMain.classList.remove('inner-header__button-open--nojs');
+      toggleMain.classList.remove('inner-header__toggle--nojs');
 
       navToggle.addEventListener('click', function() {
-        if (toggleMain.classList.contains('inner-header__button-open--close-menu')) {
-          toggleMain.classList.remove('inner-header__button-open--close-menu');
-          toggleMain.classList.add('inner-header__button-open--open-menu');
+        if (toggleMain.classList.contains('inner-header__toggle-close')) {
+          toggleMain.classList.remove('inner-header__toggle-close');
         } else {
-          toggleMain.classList.add('inner-header__button-open--close-menu');
-          toggleMain.classList.remove('inner-header__button-open--open-menu');
+          toggleMain.classList.add('inner-header__toggle-close');
         }
       });
 
-var toggleMain = document.querySelector('.inner-header__button-close');
+//шапка меню
+
+var menuMain = document.querySelector('.inner-header');
       var navToggle = document.querySelector('.inner-header__toggle');
 
-      toggleMain.classList.remove('inner-header__button-close--nojs');
+      menuMain.classList.remove('inner-header--nojs');
 
       navToggle.addEventListener('click', function() {
-        if (toggleMain.classList.contains('inner-header__button-close--open-menu')) {
-          toggleMain.classList.remove('inner-header__button-close--open-menu');
-          toggleMain.classList.add('inner-header__button-close--close-menu');
+        if (menuMain.classList.contains('inner-header--close-menu')) {
+          menuMain.classList.remove('inner-header--close-menu');
+          menuMain.classList.add('inner-header--open-menu');
         } else {
-          toggleMain.classList.add('inner-header__button-close--open-menu');
-          toggleMain.classList.remove('inner-header__button-close--close-menu');
+          menuMain.classList.add('inner-header--close-menu');
+          menuMain.classList.remove('inner-header--open-menu');
         }
-      });
-
-var menuMain = document.querySelector('.inner-header__menu');
-      var navToggle = document.querySelector('.inner-header__toggle');
-
-      menuMain.classList.remove('inner-header__menu--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (menuMain.classList.contains('inner-header__menu--close-menu')) {
-          menuMain.classList.remove('inner-header__menu--close-menu');
-          menuMain.classList.add('inner-header__menu--open-menu');
-        } else {
-          menuMain.classList.add('inner-header__menu--close-menu');
-          menuMain.classList.remove('inner-header__menu--open-menu');
-        }
-      });
+      })

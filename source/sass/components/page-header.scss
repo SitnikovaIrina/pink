@@ -1,14 +1,16 @@
 .page-header__background {
   color: #ffffff;
   background-color: #1d2631;
-  background-image: url("../img/jpeg/back-tablet.jpg");
-  background-size: 773px 462px;
+  background-image: url("../img/jpeg/bg-back-mobile.jpg");
+  width: 100%;
+  height: auto;
+  background-size: 700px auto;
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/jpeg/back-tablet@2x.jpg");
-    background-size: 773px auto;
+    background-image: url("../img/jpeg/bg-back-mobile@2x.jpg");
+    background-size: 1400px auto;
   }
 
   @media (min-width: 660px) {
@@ -36,17 +38,16 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  max-width: 320px;
   min-height: 667px;
   margin: 0 auto;
-  padding: 0 20px;
-  padding-top: 24px;
+  padding: 0;
 
   @media (min-width: 660px) {
     display: block;
     position: relative;
     max-width: 660px;
     min-height: 619px;
+    padding: 20px;
     padding-top: 94px;
     background-image: url("../img/png/bac-phone-tablet.png");
     background-repeat: no-repeat;
@@ -75,23 +76,45 @@
   }
 }
 
-.page-header__title-text {
-  margin: 0;
-  padding-bottom: 315px;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 120%;
-  text-align: center;
-  color: #ffffff;
+.page-header__title-wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 24px;
+  padding-bottom: 314px;
   background-image: url("../img/png/bac-phone-mobile.png");
   background-repeat: no-repeat;
   background-size: 320px 286px;
-  background-position: -20px 100%;
+  background-position: 0 100%;
+  z-index: 1;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/png/bac-phone-mobile@2x.png");
     background-size: 320px auto;
   }
+
+  @media (min-width: 660px) {
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    background-image: none;
+  }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+  }
+}
+
+.page-header__title-text {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
 
   @media (min-width: 660px) {
     width: 245px;
