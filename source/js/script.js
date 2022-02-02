@@ -5,6 +5,7 @@ var navMain = document.querySelector('.nav');
 
       navMain.classList.remove('nav--nojs');
 
+
       navToggle.addEventListener('click', function() {
         if (navMain.classList.contains('nav--opened')) {
           navMain.classList.remove('nav--opened');

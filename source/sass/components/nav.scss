@@ -1,4 +1,5 @@
 .nav {
+  display: none;
   position: fixed;
   top: 66px;
   width: 100%;
@@ -12,6 +13,11 @@
     display: block;
   }
 
+  &--nojs {
+    display: block;
+  }
+
+
   @media (min-width: 660px) {
     top: 110px;
   }
@@ -19,14 +25,12 @@
   @media (min-width: 1200px) {
     position: unset;
     z-index: 0;
-
-    &--hide {
-      display: block;
-    }
+    display: block;
   }
 }
 
 .nav--nojs .nav__wrapper {
+  display: block;
   position: static;
   min-height: 0;
 }
