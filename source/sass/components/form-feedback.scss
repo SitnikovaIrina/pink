@@ -55,24 +55,27 @@
   border-radius: 1px;
 
   &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 30px;
     text-align: left;
-    word-spacing: 0.3px;
     color: #283645;
+  }
+
+  &::-moz-placeholder {
+    color: #283645;
+    opacity: 1;
   }
 
   &:hover {
     border: 2px solid #283645;
   }
 
-  :focus {
-    outline: 2px solid #283645;
-  }
-
   &:active {
-    border: 2px solid #d22856;
+    outline: 2px solid #d22856;
+    outline-offset: -2px;
   }
 
   @media (min-width: 660px) {

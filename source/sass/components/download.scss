@@ -30,6 +30,7 @@
   @media (min-width: 660px) {
     min-width: 300px;
     padding: 0;
+    padding-bottom: 20px;
     margin: 0;
   }
 }
@@ -57,7 +58,7 @@
   }
 
   &:focus {
-    outline: 3px solid #d22856;
+    outline: 3px solid #ffffff;
     outline-offset: -3px;
   }
 

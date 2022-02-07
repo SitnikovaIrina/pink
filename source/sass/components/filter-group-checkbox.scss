@@ -25,9 +25,14 @@
   }
 
   @media (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
     width: 936px;
     min-height: 239px;
-    padding: 0;
+    padding: 47px 56px;
+    padding-bottom: 0;
     margin-bottom: 58px;
   }
 }
@@ -56,22 +61,25 @@
   list-style-type: none;
 
   @media (min-width: 1200px) {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    column-gap: 52px;
-    width: 819px;
-    margin: auto;
-    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 260px;
+    margin: 0;
+
+    &--width {
+      width: 242px;
+    }
+
+    &--width-ul {
+      width: 210px;
+    }
   }
 }
 
 .filter-group-checkbox__item {
-  margin-bottom: 52px;
-
-  &:last-child {
-    margin-bottom: 47px;
-  }
+  margin-bottom: 51px;
 
   @media (min-width: 660px) {
     &:last-child {
@@ -81,36 +89,6 @@
 
   @media (min-width: 1200px) {
     margin-bottom: 52px;
-
-    &--shark {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-    }
-
-    &--beach {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-    }
-
-    &--see {
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-    }
-
-    &--souvenirs {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-    }
-
-    &--tower {
-      grid-column: 3 / 4;
-      grid-row: 1 / 2;
-    }
-
-    &--hotel {
-      grid-column: 3 / 4;
-      grid-row: 2 / 3;
-    }
   }
 }
 

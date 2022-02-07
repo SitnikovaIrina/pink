@@ -108,10 +108,12 @@
 .contacts__email {
   &:hover {
     color: #283645;
+    text-decoration: underline;
   }
 
   &:active {
     color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
   }
 
   @media (min-width: 1200px) {
@@ -123,11 +125,6 @@
 .contacts__email {
   @media (min-width: 660px) {
     margin-bottom: 40px;
-  }
-
-  &:focus {
-    outline: 2px solid #283645;
-    border-radius: 1px;
   }
 }
 
@@ -175,24 +172,24 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
-    border-top: 33px solid #ffffff;
+    width: auto;
+    height: 70px;
+    background-image: url("../img/svg/triangle-white.svg");
+    background-size: auto 70px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
   }
 
   @media (min-width: 660px) {
     &::before {
-      border-left: 330px solid transparent;
-      border-right: 330px solid transparent;
-      border-top: 68px solid #ffffff;
+      height: 123px;
+      background-size: auto 123px;
     }
   }
 
   @media (min-width: 1200px) {
     &::before {
-      border-left: 600px solid transparent;
-      border-right: 600px solid transparent;
-      border-top: 103px solid #ffffff;
+      background-image: url("../img/svg/triangle-white-desk.svg");
     }
   }
 }

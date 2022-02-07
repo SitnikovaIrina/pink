@@ -1,6 +1,7 @@
 .form-contacts {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   box-sizing: border-box;
   width: 320px;
   padding: 20px;
@@ -55,6 +56,8 @@
 
   @media (min-width: 1200px) {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 820px;
@@ -74,6 +77,8 @@
   }
 
   @media (min-width: 1200px) {
+    width: 374px;
+    margin: 0;
     margin-top: 25px;
     margin-bottom: 13px;
   }
@@ -110,23 +115,26 @@
   border-radius: 1px;
 
   &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 30px;
     color: #283645;
+  }
+
+  &::-moz-placeholder {
+    color: #283645;
+    opacity: 1;
   }
 
   &:hover {
     border: 2px solid #283645;
   }
 
-  &:focus {
-    outline: 2px solid #283645;
-    outline-offset: -2px;
-  }
-
   &:active {
-    border: 2px solid #d22856;
+    outline: 2px solid #d22856;
+    outline-offset: -2px;
   }
 
   @media (min-width: 660px) {
@@ -157,7 +165,6 @@
   }
 
   @media (min-width: 1200px) {
-    margin-right: 70px;
     margin-bottom: 11px;
   }
 }
